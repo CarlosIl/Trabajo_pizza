@@ -1,0 +1,40 @@
+
+body{
+    background-color: gainsboro;
+}
+
+#titulo{
+    color: white;
+}
+
+#pizzayprecio{
+    float: right;
+}
+
+#masa{
+    position: relative;
+    left: 25%;
+}
+
+#arrow{
+    position:relative;
+    left: 300px;
+    top: 25px;
+
+}
+
+#nombre_pizza_caja{
+    margin-left: 50px;
+}
+
+#nombre_pizza{
+    background-color: gainsboro;
+}
+
+#precio_pizza{
+    float: left;
+}
+
+#boton_añadir{
+    margin-left: 100px;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+      <link href="trabajo_pizza.css" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <script>
+        (function ($) {
+          $(function () {
+            // Plugin initialization
+            $('select').not('.disabled').formSelect();
+          });
+        })(jQuery); // end of jQuery name space
+      </script>
+      
+    </head>
+
+    <body>
+      <div class="row">
+
+        <div id="titulo" class="col s12 blue">
+              <h1>
+                  Crea tu pizza
+              </h1>
+              <br>
+              <p>
+                  Crea tu pizza!
+              </p>
+              <p>
+                  Diviértete creando tu pizza perfecta, elige tu masa favorita y los ingredientes que más te gustan. Ponle nombre a tu receta y guárdala haciendo tu próximo pedido más rápido y facil.
+              </p>
+          </div>
+
+          <div class="row "></div> <!-- linea en blanco -->
+
+        <form class="col s12">
+          <div class="col s4" id="pizzayprecio">
+            <img id="masa" src="masa.jpg" height="50%" width="50%">
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <img src="arrow.png" id="arrow" height="12px" width="17px">
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <div class="col s10 white" id="nombre_pizza_caja">
+              <div class="input-field col s6">
+                <input placeholder="Ponle un nombre si quieres" id="nombre_pizza" type="text" class="validate">
+                <label for="nombre_pizza"></label>
+              </div>
+            </div>
+
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <div class="col s8" id="precio_pizza">
+              <img src="precio_pizza.JPG" height="106px" width="415px">
+            </div>
+
+            <div class="col s2" id="boton_añadir">              
+              <input type="image" src="boton_añadir.JPG">          
+            </div>
+          </div>
+
+
+          <div class="col s8">
+
+            <p>
+            ¿Cómo la quieres?
+            </p>
+
+            <div class="row"></div> <!-- linea en blanco -->
+            
+            <div class=" input-field col s3">
+              <label></label>
+                <select class="browser-default" disabled>
+                  <option value="" disabled selected>1 pizza</option>
+                </select>
+            </div>
+            
+            <div class="col s3">
+                <select class="browser-default">
+                  <option value="" disabled selected>Tamaño</option>
+                  <option value="1">Mediana</option>
+                  <option value="2">Grande</option>
+                  <option value="3">Option 3</option>
+                </select>
+              <label>Para 2 personas</label>
+            </div>
+
+            <div class=" col s3">
+                <select class="browser-default">
+                  <option value="" disabled selected>Tipo de pizza</option>
+                  <option value="1">Original</option>
+                  <option value="2">Roll Extra</option>
+                  <option value="3">Domino´s Roll</option>
+                  <option value="4">Cabra & Roll</option>
+                  <option value="5">Finízzima</option>
+                  <option value="6">Artisan</option>
+                  <option value="7">Pan</option>
+                </select>
+              <label>Para aquellos amantes del auténtico sabor de la pizza Domino´s</label>
+            </div>
+            
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <p>
+            ¿Cuál es tu salsa?  
+            </p>
+
+            <div class="row "></div> <!-- linea en blanco -->
+
+            
+            <div class="col s2">
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Sin salsa</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Salsa barbacoa</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label>
+                <input class="with-gap" name="group1" type="radio" checked />
+                <span>Salsa de tomate</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Crema fresca</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Crema fresca y barbacoa</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Salsa Bourbon (0% alcohol)</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Salsa barbacoa Texas</span>
+              </label>
+            </div>
+            <div class="col s2">
+              <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span>Salsa barbacoa Kansas</span>
+              </label>
+            </div>
+            
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <p>
+              ¿Cuánta mozzarella te apetece?
+            </p>
+
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <div id="test-slider"></div>
+
+            <form action="#">
+              <p class="range-field">
+                <input type="range" id="test5" min="0" max="100" />
+              </p>
+            </form>
+
+            <p>
+              ¿Que ingredientes ponemos?
+            </p>
+
+            <div class="col s3">
+              <img class="responsive-img" src="aceitunas.png">
+            </div>
+
+            <div class="col s3">
+              <img class="responsive-img" src="baconcrispy.png">
+            </div>
+          
+            <div class="col s3">
+              <img class="responsive-img" src="pollobuffalo.png">
+            </div>
+          
+            <div class="col s3">
+              <img class="responsive-img" src="anchoas.png">
+            </div>
+
+            
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>Aceitunas negras</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Bacon Crispy</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Pollo Buffalo</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>Anchoas</span>
+              </label>
+            </div>
+
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <div class="col s3">
+              <img class="responsive-img" src="atun.png">
+            </div>
+
+            <div class="col s3">
+              <img class="responsive-img" src="bacon.png">
+            </div>
+          
+            <div class="col s3">
+              <img class="responsive-img" src="cebolla.png">
+            </div>
+          
+            <div class="col s3">
+              <img class="responsive-img" src="champinon.png">
+            </div>
+
+            
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Atún</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Bacon</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Cebolla</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Champiñon</span>
+              </label>
+            </div>
+
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <div class="col s3">
+              <img class="responsive-img" src="jamon.png">
+            </div>
+
+            <div class="col s3">
+              <img class="responsive-img" src="jamon_serrano.png">
+            </div>
+          
+            <div class="col s3">
+              <img class="responsive-img" src="maiz.png">
+            </div>
+          
+            <div class="col s3">
+              <img class="responsive-img" src="pepperoni.png">
+            </div>
+
+            
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>York</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Jamón serrano</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Maíz</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>Pepperoni</span>
+              </label>
+            </div>
+
+            <div class="row "></div> <!-- linea en blanco -->
+
+            <div class="col s3">
+              <img class="responsive-img" src="pimiento.png">
+            </div>
+
+            <div class="col s3">
+              <img class="responsive-img" src="pina.png">
+            </div>
+          
+            <div class="col s3">
+              <img class="responsive-img" src="pollo.png">
+            </div>
+          
+            <div class="col s3">
+              <img class="responsive-img" src="ternera.png">
+            </div>
+
+            
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Pimiento verde</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Piña</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Pollo a la parrilla</span>
+              </label>
+            </div>
+
+            <div class="col s3">
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Ternera especiada</span>
+              </label>
+            </div>
+
+            <div class="row "></div> <!-- linea en blanco -->
+
+          </div>
+
+        </form>
+      </div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="materialize.min.js"></script>
+    </body>
+  </html>
